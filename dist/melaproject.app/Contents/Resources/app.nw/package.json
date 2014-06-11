@@ -1,0 +1,13 @@
+{
+  "name": "melaproject",
+  "main": "views/index.html",
+  "version": "0.0.1",
+  "single-instance": true,
+  "window": {
+    "title": "melaproject",
+    "width": 800,
+    "height": 600,
+    "toolbar": false
+  },
+  "chromium-args": "--child-clean-exit"
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MelaProject</title>
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+  <body class="cf">
+    <h1>Project Creator</h1>
+    <fieldset id="projectname-field">
+      <label for="projectname">enter the name of your project here </label><input id="projectname" type="text" placeholder="your-project-name-here">
+    </fieldset>
+    <fieldset id="options">
+      <div class="cf">
+        <input id="check-compass" type="checkbox"><label for="check-compass"> use compass</label>
+      </div>
+      <div class="cf">
+        <input id="check-detail" type="checkbox"><label for="check-detail"> this is a detail page</label>
+      </div>
+    </fieldset>
+    <fieldset id="homedir-field">
+      <div>
+        <label class="button" for="homedir">choose local directory</label>
+        <input class="dirinput" id="homedir" name="homedir" type="file" webkitdirectory />
+        <input type="text" readonly placeholder="no directory selected" class="feedback">
+      </div>
+    </fieldset>
+    <fieldset id="networkdir-field">
+     <div>
+        <label class="button" for="networkdir">choose network directory</label>
+        <input class="dirinput" id="networkdir" name="networkdir" type="file" webkitdirectory />
+        <input type="text" readonly placeholder="no directory selected" class="feedback">
+     </div>
+    </fieldset>
+    <fieldset id="asset-field">
+      <div class="cf">
+        <label class="button" for="cssdir">choose directory for css</label>
+        <input class="dirinput" id="cssdir" name="cssdir" type="file" webkitdirectory />
+        <input type="text" readonly placeholder="no directory selected" class="feedback">
+      </div>
+      <div class="cf">
+        <label class="button" for="jsdir">choose directory for js</label>
+        <input class="dirinput" id="jsdir" name="jsdir" type="file" webkitdirectory />
+        <input type="text" readonly placeholder="no directory selected" class="feedback">
+      </div>
+      <div class="cf">
+        <label class="button" for="imagedir">choose directory for images</label>
+        <input class="dirinput" id="imagedir" name="imagedir" type="file" webkitdirectory />
+        <input type="text" readonly placeholder="no directory selected" class="feedback">
+      </div>
+    </fieldset>
+
+    <div class="button button-create" id="js-createButton">create project</div>
+    <div class="button button-reset" id="js-createReset">reset fields</div>
+
+
+    <div class="window-message window-success js-window-success">
+      <p class="message js-message"></p>
+      <div class="closewindow js-closewindow">x</div>
+    </div>
+    <div class="window-message window-error js-window-error">
+      <p class="message js-message"></p>
+      <div class="closewindow js-closewindow">x</div>
+    </div>
+
+    <script src="../js/jquery-2.1.1.min.js"></script>
+    <script src="../js/scripts.js"></script>
+  </body>
+
+</html>

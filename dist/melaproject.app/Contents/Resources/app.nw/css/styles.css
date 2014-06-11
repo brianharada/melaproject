@@ -1,0 +1,102 @@
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+.cf:after {clear: both; }
+* { box-sizing: border-box;}
+html  {
+  font: 400 62.5%/1.4  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  background-color: hsl(197, 66%, 66%);
+}
+h1 {
+  font-size: 2rem;
+  weight: 200;
+  color: white;
+}
+fieldset {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  border: none;
+  /*box-shadow: 0 0 3px;*/
+  background-color: hsl(197, 66%, 46%);
+  padding: 20px 5px;
+}
+#asset-field div {
+  margin-bottom: 5px;
+}
+#asset-field div:last-child {
+  margin-bottom: 0;
+}
+.dirinput {
+  display: none;
+}
+#projectname-field {
+  font-size: 2.3rem;
+}
+#projectname {
+  font-size: 2.3rem;
+  height: 31px;
+  width: 400px;
+}
+.feedback { 
+  width: 70%;
+  font-size: 1.7rem;
+  height: 31px;
+  float: right;
+}
+.button {
+  background-color: hsla(255, 100%, 100%, 0.8);        
+  color: hsl(197, 66%, 33%);
+  border-radius: 3px;
+  display: block;
+  width: 29%;
+  padding: 4px 5px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: hsla(180, 50%, 10%, 0.8);        
+  color: hsl(255, 100%, 100%);
+}
+.button-create {
+  font-size: 2rem;
+}
+.button-reset {
+  float: right;
+  font-size: 1.5rem;
+  width: 15%;
+}
+
+.window-message {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  right: 10%;
+  bottom: 30%;
+  padding: 20px;
+}
+.window-message .message {
+  font-size: 1.4rem;
+}
+.window-error {
+  background-color: red;
+}
+.window-success {
+  background-color: white;
+}
+.closewindow {
+  font-size: 1.8rem;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 1.8rem;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
