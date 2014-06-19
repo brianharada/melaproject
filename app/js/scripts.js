@@ -302,8 +302,8 @@ function createGulpFile() {
           "\t\t}))\n";
       } else {
         code += "\t\t.pipe(sass({ style: 'expanded' }))\n";
-      }
-      code += "\t\t.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))\n";
+        code += "\t\t.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))\n";
+      }      
       if (pathobj.networkpath){
        code += "\t\t.pipe(gulp.dest('#'))\n".replace('#',path.join(pathobj.networkpath,'css'));
       }
@@ -379,11 +379,12 @@ function createMainSass(){
 }
 
 function createUtilitySass() {
+  var imgpath = pathobj.imageclean !== false ? pathobj.imageclean : pathobj.imagepath;
   var code = "//*-------------------------------*//\n" +
   "//    Mixins\n" +
   "//*-------------------------------*//\n\n" +
   "@mixin bgImg($imgName,$repeat:no-repeat,$xPos:left,$yPos:top,$color:transparent) {\n" +
-  "\tbackground: url(&/#{imgName}) $repeat $xPos $yPos $color;\n".replace('&',pathobj.imagepath);
+  "\tbackground: url(&/#{$imgName}) $repeat $xPos $yPos $color;\n".replace('&',imgpath);
   code += "}\n\n" +
    "//*-------------------------------*//\n" +
    "//    Misc\n" +

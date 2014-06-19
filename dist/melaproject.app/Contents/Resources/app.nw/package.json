@@ -1,10 +1,10 @@
 {
   "name": "melaproject",
   "main": "views/index.html",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "single-instance": true,
   "window": {
-    "title": "melaproject",
+    "title": "melaproject 0.0.2",
     "width": 800,
     "height": 600,
     "toolbar": false

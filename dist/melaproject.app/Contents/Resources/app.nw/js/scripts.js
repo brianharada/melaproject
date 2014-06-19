@@ -29,17 +29,17 @@ $('.dirinput').change(function () {
   $(this).siblings('.feedback').val(dirval);
 });
 
-$('.js-closewindow').on('click',function(){
+$('.js-closewindow').on('click', function () {
   $(this).closest('.window-message').fadeOut();
 });
 
-$('#js-createReset').on('click', reset );
+$('#js-createReset').on('click', reset);
 
-$('#js-createButton').on('click', function(){
+$('#js-createButton').on('click', function () {
   console.log('clicked');
   $(this).html('<img src="images/ajax-loader.gif" />');
   var pathcheck = populatePaths();
-  if(!pathcheck) return;
+  if (!pathcheck) return;
   console.log('passed pathcheck');
   createHomeDirs();
   createNetworkDirs();
@@ -51,66 +51,66 @@ $('#js-createButton').on('click', function(){
   var html = createHtml();
   var sbproj = createSublimeProject();
   var js;
-  if ( optionsobj.c_detail ) {
+  if (optionsobj.c_detail) {
     js = createDetailJS();
   } else {
     js = '';
   }
 
-  fs.writeFile(path.join( pathobj.homepath,'gulpfile.js' ),gulpfile,function(err){
-    if(err){
+  fs.writeFile(path.join(pathobj.homepath, 'gulpfile.js'), gulpfile, function (err) {
+    if (err) {
       showError(err);
-    }else{
+    } else {
       console.log('gulpfile.js created');
     }
   });
 
-  fs.writeFile(path.join( pathobj.homepath,'package.json' ),packagejson,function(err){
-    if(err){
+  fs.writeFile(path.join(pathobj.homepath, 'package.json'), packagejson, function (err) {
+    if (err) {
       showError(err);
-    }else{
+    } else {
       console.log('package.json created');
     }
   });
 
-  fs.writeFile(path.join( pathobj.homepath, pathobj.projectname + '.sublime-project' ),sbproj, function(err){
-    if(err){
+  fs.writeFile(path.join(pathobj.homepath, pathobj.projectname + '.sublime-project'), sbproj, function (err) {
+    if (err) {
       showError(err);
-    }else{
+    } else {
       console.log('package.json created');
     }
   });
 
-  fs.writeFile(path.join( pathobj.homepath, 'sass', pathobj.projectname +'.scss' ),mainsass, function(err){
-    if(err){
+  fs.writeFile(path.join(pathobj.homepath, 'sass', pathobj.projectname + '.scss'), mainsass, function (err) {
+    if (err) {
       showError(err);
-    }else{
+    } else {
       console.log('main Sass created');
     }
   });
 
-  fs.writeFile(path.join( pathobj.homepath, 'sass', '_utility.scss' ), utilitysass, function(err){
-    if(err){
+  fs.writeFile(path.join(pathobj.homepath, 'sass', '_utility.scss'), utilitysass, function (err) {
+    if (err) {
       showError(err);
-    }else{
+    } else {
       console.log('utility Sass created');
     }
   });
 
-  fs.writeFile(path.join( pathobj.homepath, 'js', pathobj.projectname + '.js' ), js, function(err){
-    if(err){
+  fs.writeFile(path.join(pathobj.homepath, 'js', pathobj.projectname + '.js'), js, function (err) {
+    if (err) {
       showError(err);
-    }else{
+    } else {
       console.log('js file created');
     }
   });
 
-  fs.writeFile(path.join( pathobj.homepath, 'html', pathobj.projectname + '.html' ), html, function(err){
-    if(err){
+  fs.writeFile(path.join(pathobj.homepath, 'html', pathobj.projectname + '.html'), html, function (err) {
+    if (err) {
       showError(err);
-    }else{
+    } else {
       console.log('html created');
-    }    
+    }
   });
   // npminstall = childProcess.exec('ls -l',{cwd:pathobj.homepath,env:'npm'}, function(error, stdout, stderr){
   //   if(error){
@@ -130,49 +130,49 @@ $('#js-createButton').on('click', function(){
 
 });
 
-function showError(message){
+function showError (message) {
   $('#js-createButton').text('create project');
   $('.js-window-error').find('.js-message').text(message);
   $('.js-window-error').fadeIn(100);
   console.log(message);
 }
 
-function showSuccess(message){
+function showSuccess (message) {
   $('#js-createButton').text('create project');
   $('.js-window-success').find('.js-message').text(message);
   $('.js-window-success').fadeIn(100);
   console.log(message);
 }
 
-function populatePaths(){
+function populatePaths () {
   // check to see if project name is there and store it if not return error and throw false
-  if( $('#projectname').val() ) {
+  if ($('#projectname').val()) {
     pathobj.projectname = $('#projectname').val().split(' ').join('-');
-  }else{
+  } else {
     showError('project name required');
     return false;
   }
   console.log('projectname passed');
   // check to see if home directory is there and store it if not return error and throw false, these first two values must be there
-  if( $('#homedir').val() ){
-    pathobj.homepath = path.join( $('#homedir').val(), pathobj.projectname + '-gulp' );
-  }else{
+  if ($('#homedir').val()) {
+    pathobj.homepath = path.join($('#homedir').val(), pathobj.projectname + '-gulp');
+  } else {
     showError('home directory required');
     return false;
   }
   console.log('homedir passed');
-  if( $('#networkdir').val() ) pathobj.networkpath = path.join( $('#networkdir').val(), 'Front-end' );
-  if( $('#cssdir').val() ) pathobj.csspath = path.join( $('#cssdir').val(), pathobj.projectname );
-  if( $('#jsdir').val() ) pathobj.jspath = path.join( $('#jsdir').val(), pathobj.projectname );
-  if( $('#imagedir').val() ) pathobj.imagepath = path.join( $('#imagedir').val(), pathobj.projectname );
+  if ($('#networkdir').val()) pathobj.networkpath = path.join($('#networkdir').val(), 'Front-end');
+  if ($('#cssdir').val()) pathobj.csspath = path.join($('#cssdir').val(), pathobj.projectname);
+  if ($('#jsdir').val()) pathobj.jspath = path.join($('#jsdir').val(), pathobj.projectname);
+  if ($('#imagedir').val()) pathobj.imagepath = path.join($('#imagedir').val(), pathobj.projectname);
 
-  if ( pathobj.csspath.split('Volumes').length > 1 ){
+  if (pathobj.csspath.split('Volumes').length > 1) {
     pathobj.cssclean = pathobj.csspath.split('Volumes')[1];
   }
-  if ( pathobj.jspath.split('Volumes').length > 1 ){
+  if (pathobj.jspath.split('Volumes').length > 1) {
     pathobj.jsclean = pathobj.jspath.split('Volumes')[1];
   }
-  if ( pathobj.imagepath.split('Volumes').length > 1 ){
+  if (pathobj.imagepath.split('Volumes').length > 1) {
     pathobj.imageclean = pathobj.imagepath.split('Volumes')[1];
   }
 
@@ -182,61 +182,61 @@ function populatePaths(){
   return true;
 }
 
-function createHomeDirs(){
+function createHomeDirs() {
   // create home directory called projectname-gulp
-  try{ fs.mkdirSync(pathobj.homepath); }
-  catch(e){ showError(e); }
+  try { fs.mkdirSync(pathobj.homepath); }
+  catch (e) { showError(e); }
   // create html dir
-  try{ fs.mkdirSync(path.join(pathobj.homepath,'html')); }
-  catch(e){ showError(e); }
+  try { fs.mkdirSync(path.join(pathobj.homepath, 'html')); }
+  catch (e) { showError(e); }
   // create projectname.html
 
   // create js dir
-  try{ fs.mkdirSync(path.join(pathobj.homepath,'js')); }
-  catch(e){ showError(e); }
+  try { fs.mkdirSync(path.join(pathobj.homepath, 'js')); }
+  catch (e) { showError(e); }
   // create projectname.js
 
   // create sass dir
-  try{ fs.mkdirSync(path.join(pathobj.homepath,'sass')); }
-  catch(e){ showError(e); }
+  try { fs.mkdirSync(path.join(pathobj.homepath, 'sass')); }
+  catch (e) { showError(e); }
   // create projectname.scss utility.scss with mixins
 
   // create images dir
-  try{ fs.mkdirSync(path.join(pathobj.homepath,'images')); }
-  catch(e){ showError(e); }
+  try { fs.mkdirSync(path.join(pathobj.homepath, 'images')); }
+  catch (e) { showError(e); }
 }
 
-function createNetworkDirs(){
+function createNetworkDirs() {
   // create front end directory
-  try{ fs.mkdirSync(pathobj.networkpath); }
-  catch(e){ showError(e); }
+  try { fs.mkdirSync(pathobj.networkpath); }
+  catch (e) { showError(e); }
 
   // create css directory in network directory
-  try{ fs.mkdirSync(path.join( pathobj.networkpath, 'css' )); }
-  catch(e){ showError(e); }
+  try { fs.mkdirSync(path.join(pathobj.networkpath, 'css')); }
+  catch (e) { showError(e); }
 
   // create js directory in network directory
-  try{ fs.mkdirSync(path.join( pathobj.networkpath, 'js' )); }
-  catch(e){ showError(e); }
+  try { fs.mkdirSync(path.join(pathobj.networkpath, 'js')); }
+  catch (e) { showError(e); }
 
   // create gulp directory in network directory
-  try{ fs.mkdirSync(path.join( pathobj.networkpath, pathobj.projectname + '-gulp' )); }
-  catch(e){ showError(e); }
+  try { fs.mkdirSync(path.join(pathobj.networkpath, pathobj.projectname + '-gulp')); }
+  catch (e) { showError(e); }
 
   // create css directory for final site
-  try{ fs.mkdirSync( pathobj.csspath ); }
-  catch(e){ showError(e); }
+  try { fs.mkdirSync(pathobj.csspath); }
+  catch (e) { showError(e); }
 
   // create js directory for final site
-  try{ fs.mkdirSync( pathobj.jspath ); }
-  catch(e){ showError(e); }
+  try { fs.mkdirSync(pathobj.jspath); }
+  catch (e) { showError(e); }
 
   // create image directory for final site
-  try{ fs.mkdirSync( pathobj.imagepath ); }
-  catch(e){ showError(e); }
+  try { fs.mkdirSync(pathobj.imagepath); }
+  catch (e) { showError(e); }
 }
 
-function reset(){
+function reset() {
   $('#projectname').val('');
 
   $('#networkdir').val('');
@@ -261,11 +261,11 @@ function reset(){
     optionsobj[each] = false;
   }
 
-  $('#check-detail').prop('checked',false);
-  $('#check-compass').prop('checked',false);
+  $('#check-detail').prop('checked', false);
+  $('#check-compass').prop('checked', false);
 }
 
-function createGulpFile(){
+function createGulpFile() {
   var csspath = pathobj.cssclean === true ? pathobj.cssclean : pathobj.csspath;
   var imagepath = pathobj.imageclean === true ? pathobj.imageclean : pathobj.imagepath;
   var code = "var gulp = require('gulp'),\n" +
@@ -302,8 +302,8 @@ function createGulpFile(){
           "\t\t}))\n";
       } else {
         code += "\t\t.pipe(sass({ style: 'expanded' }))\n";
-      }
-      code += "\t\t.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))\n";
+        code += "\t\t.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))\n";
+      }      
       if (pathobj.networkpath){
        code += "\t\t.pipe(gulp.dest('#'))\n".replace('#',path.join(pathobj.networkpath,'css'));
       }
@@ -379,11 +379,12 @@ function createMainSass(){
 }
 
 function createUtilitySass() {
+  var imgpath = pathobj.imageclean !== false ? pathobj.imageclean : pathobj.imagepath;
   var code = "//*-------------------------------*//\n" +
   "//    Mixins\n" +
   "//*-------------------------------*//\n\n" +
   "@mixin bgImg($imgName,$repeat:no-repeat,$xPos:left,$yPos:top,$color:transparent) {\n" +
-  "\tbackground: url(&/#{imgName}) $repeat $xPos $yPos $color;\n".replace('&',pathobj.imagepath);
+  "\tbackground: url(&/#{$imgName}) $repeat $xPos $yPos $color;\n".replace('&',imgpath);
   code += "}\n\n" +
    "//*-------------------------------*//\n" +
    "//    Misc\n" +
