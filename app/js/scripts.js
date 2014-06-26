@@ -161,7 +161,7 @@ function populatePaths () {
     return false;
   }
   console.log('homedir passed');
-  if ($('#networkdir').val()) pathobj.networkpath = path.join($('#networkdir').val(), 'Front-end');
+  if ($('#networkdir').val()) pathobj.networkpath = path.join($('#networkdir').val(), 'front-end');
   if ($('#cssdir').val()) pathobj.csspath = path.join($('#cssdir').val(), pathobj.projectname);
   if ($('#jsdir').val()) pathobj.jspath = path.join($('#jsdir').val(), pathobj.projectname);
   if ($('#imagedir').val()) pathobj.imagepath = path.join($('#imagedir').val(), pathobj.projectname);
