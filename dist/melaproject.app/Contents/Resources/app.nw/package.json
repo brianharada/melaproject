@@ -1,7 +1,6 @@
 {
   "name": "melaproject",
   "main": "views/index.html",
-  "version": "0.0.2",
   "single-instance": true,
   "window": {
     "title": "melaproject 0.0.2",

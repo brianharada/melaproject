@@ -1,21 +1,18 @@
 {
   "name": "melaproject",
-  "version": "0.0.0",
   "description": "",
   "keywords": [],
-  
-    "homepage": "https://github.com/tbarber350/melaproject",
-    "bugs": "https://github.com/tbarber350/melaproject/issues",
-    "author": {
-      "name": "",
-      "email": "",
-      "url": "https://github.com/tbarber350"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git://github.com/tbarber350/melaproject.git"
-    },
-  
+  "homepage": "https://github.com/tbarber350/melaproject",
+  "bugs": "https://github.com/tbarber350/melaproject/issues",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": "https://github.com/tbarber350"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tbarber350/melaproject.git"
+  },
   "dependencies": {},
   "devDependencies": {
     "matchdep": "~0.1.2",
