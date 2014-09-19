@@ -108,5 +108,86 @@ function createPackageJson(_pathobj){
   return code;
 }
 
+function createMainSass(){
+  var code = '@import "utility";\n';
+  return code;
+}
+
+function createUtilitySass(_pathobj,_optionsobj) {
+  var imgpath = _pathobj.imageclean !== false ? _pathobj.imageclean : _pathobj.imagepath;
+  var code = "//*-------------------------------*//\n" +
+  "//    Mixins\n" +
+  "//*-------------------------------*//\n\n" +
+  "@mixin bgImg($imgName,$repeat:no-repeat,$xPos:left,$yPos:top,$color:transparent) {\n" +
+  "\tbackground: url(&/#{$imgName}) $repeat $xPos $yPos $color;\n".replace('&',imgpath);
+  code += "}\n\n" +
+   "//*-------------------------------*//\n" +
+   "//    Misc\n" +
+   "//*-------------------------------*//\n\n" +
+   "//*** clearfix ***/\n" +
+   ".cf:before,\n" +
+   ".cf:after {\n" +
+   "\tcontent:' ';\n" +
+   "\tdisplay: table;\n" +
+   "}\n" +
+   ".cf:after {\n" +
+   "\tclear:both;\n" +
+   "}";
+   if ( _optionsobj.c_detail ) {
+     code += "\n//*-------------------------------*//\n" +
+     "//    Detail page reset\n" +
+     "//*-------------------------------*//\n\n" +
+     ".page-container, #pdp_wrapper { overflow: visible;}\n" +
+     "#dvTabContentContainer p { margin:0; }\n" +
+     "#dvTabContentContainer ul li { list-style:none; }\n" +
+     "#dvTabContentContainer ul { padding:0; margin:0; }";
+   }
+   return code;
+}
+
+function createHtml(_pathobj, _optionsobj) {
+  var jspath = _pathobj.jsclean !== false ? _pathobj.jsclean : _pathobj.jspath;
+  var csspath = _pathobj.cssclean !== false ? _pathobj.cssclean : _pathobj.csspath;
+
+  var code ='<link rel="stylesheet" href="#">\n\n\n\n'.replace('#', csspath + '/' + _pathobj.projectname + '.min.css');
+  
+  if ( _optionsobj.c_detail ) {
+    code+='[externalScript src="#"]'.replace('#', jspath + '/' + _pathobj.projectname + '.min.js');
+  } else {
+    code+='<script src="#"></script>\n'.replace('#', jspath + '/' + _pathobj.projectname + '.min.js');
+  }
+  return code;
+}
+
+function createDetailJS(){
+  var code = "productStory = {\n" +
+  "\tinit:function(){\n\n\n" +
+  "\t}\n" +
+  "};\n" +
+  "productStory.init();";
+  return code;
+}
+
+function createSublimeProject() {
+  var code = '{\n' +
+  '\t"folders":\n' +
+  '\t[\n' +
+  '\t\t{\n' +
+  '\t\t\t"follow_symlinks": true,\n' +
+  '\t\t\t"folder_exclude_patterns": ["node_modules"],\n' +
+  '\t\t\t"path": "."\n' +
+  '\t\t}\n' +
+  '\t]\n' +
+  '}';
+  return code;
+}
+
+
+
 module.exports.createGulpFile = createGulpFile;
 module.exports.createPackageJson = createPackageJson;
+module.exports.createMainSass = createMainSass;
+module.exports.createUtilitySass = createUtilitySass;
+module.exports.createHtml = createHtml;
+module.exports.createDetailJS = createDetailJS;
+module.exports.createSublimeProject = createSublimeProject;
