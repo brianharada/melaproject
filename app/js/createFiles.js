@@ -7,6 +7,7 @@ function createGulpFile (_pathobj,_optionsobj) {
     "\tsass = require('gulp-sass'),\n" +
     "\tautoprefixer = require('gulp-autoprefixer'),\n" +
     "\tminifycss = require('gulp-minify-css'),\n" +
+    "\tscsslint = require('gulp-scss-lint'),\n" +
     "\tjshint = require('gulp-jshint'),\n" +
     "\tuglify = require('gulp-uglify'),\n" +
     "\timagemin = require('gulp-imagemin'),\n" +
@@ -27,6 +28,7 @@ function createGulpFile (_pathobj,_optionsobj) {
   "gulp.task('styles',function(){\n" +
     "\treturn gulp.src('sass/**/*.scss')\n";
       if ( _optionsobj.c_compass ) {
+        code += "\t\t.pipe(scsslint())\n";
         code += "\t\t.pipe(compass({\n" +
           "\t\t\tproject: '/',\n" +
           "\t\t\tcss: '#',\n".replace('#',csspath) +
@@ -36,6 +38,7 @@ function createGulpFile (_pathobj,_optionsobj) {
           "\t\t\trelative: false\n" +
           "\t\t}))\n";
       } else {
+        code += "\t\t.pipe(scsslint())\n";
         code += "\t\t.pipe(sass({ style: 'expanded', errLogToConsole: true }))\n";
         code += "\t\t.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))\n";
       }      
@@ -102,14 +105,15 @@ function createPackageJson(_pathobj){
     '\t\t"gulp-jshint": "^1.5.5",\n' +
     '\t\t"gulp-cache": "^0.1.3",\n' +
     '\t\t"gulp-imagemin": "^0.5.0",\n' +    
-    '\t\t"gulp-compass": "^1.1.9"\n' +
+    '\t\t"gulp-compass": "^1.1.9",\n' +
+    '\t\t"gulp-scss-lint": "^0.1.3"\n' +
   '\t}\n' +
   '}\n';
   return code;
 }
 
 function createMainSass(){
-  var code = '@import "utility";\n';
+  var code = '@import \'utility\';\n\n';
   return code;
 }
 
@@ -118,8 +122,8 @@ function createUtilitySass(_pathobj,_optionsobj) {
   var code = "//*-------------------------------*//\n" +
   "//    Mixins\n" +
   "//*-------------------------------*//\n\n" +
-  "@mixin bgImg($imgName,$repeat:no-repeat,$xPos:left,$yPos:top,$color:transparent) {\n" +
-  "\tbackground: url(&/#{$imgName}) $repeat $xPos $yPos $color;\n".replace('&',imgpath);
+  "@mixin bg-img($img-name, $repeat:no-repeat, $x-pos:left, $y-pos:top, $color:transparent) {\n" +
+  "  background: url(&/#{$img-name}) $repeat $x-pos $y-pos $color;\n".replace('&',imgpath);
   code += "}\n\n" +
    "//*-------------------------------*//\n" +
    "//    Misc\n" +
@@ -127,20 +131,19 @@ function createUtilitySass(_pathobj,_optionsobj) {
    "//*** clearfix ***/\n" +
    ".cf:before,\n" +
    ".cf:after {\n" +
-   "\tcontent:' ';\n" +
-   "\tdisplay: table;\n" +
-   "}\n" +
+   "  content: ' ';\n" +
+   "  display: table;\n" +
+   "}\n\n" +
    ".cf:after {\n" +
-   "\tclear:both;\n" +
-   "}";
+   "  clear: both;\n" +
+   "}\n";
    if ( _optionsobj.c_detail ) {
      code += "\n//*-------------------------------*//\n" +
      "//    Detail page reset\n" +
      "//*-------------------------------*//\n\n" +
-     ".page-container, #pdp_wrapper { overflow: visible;}\n" +
-     "#dvTabContentContainer p { margin:0; }\n" +
-     "#dvTabContentContainer ul li { list-style:none; }\n" +
-     "#dvTabContentContainer ul { padding:0; margin:0; }";
+     ".page-container,\n#pdp_wrapper { overflow: visible;}\n\n" +
+     "#dvTabContentContainer p { margin: 0; }\n\n" +
+     "#dvTabContentContainer ul {\n  margin: 0;\n  padding: 0;\n  li { list-style: none; }\n}\n\n";
    }
    return code;
 }
