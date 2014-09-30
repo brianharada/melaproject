@@ -1,0 +1,841 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sku",
+				"skuobj"
+			],
+			[
+				"fade",
+				"fadeIn  (function)"
+			],
+			[
+				"Pag",
+				"PageID"
+			],
+			[
+				"Page",
+				"PageClientData"
+			],
+			[
+				"js",
+				"js-welcomePromoBanner"
+			],
+			[
+				"section",
+				"section-1-b"
+			],
+			[
+				"inline",
+				"inline-block  (value)"
+			],
+			[
+				"box-s",
+				"box-sizing:   (property)"
+			],
+			[
+				"fe",
+				"Feature"
+			],
+			[
+				"stop",
+				"stopaction"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"mouse",
+				"mouseleave"
+			],
+			[
+				"no",
+				"no-repeat  (value)"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"fad",
+				"fadeOut  (function)"
+			],
+			[
+				"js-vid",
+				"js-vidContainer"
+			],
+			[
+				"llset",
+				"llsetupdone"
+			],
+			[
+				"ll",
+				"llsetup"
+			],
+			[
+				"pre",
+				"preventDefault"
+			],
+			[
+				"goto",
+				"gototour2"
+			],
+			[
+				"go",
+				"gotospeakers"
+			],
+			[
+				"convent",
+				"convention_overview"
+			],
+			[
+				"margin",
+				"margin-bottom:   (property)"
+			],
+			[
+				"list-sty",
+				"list-style-position:   (property)"
+			],
+			[
+				"get",
+				"getbookmarkup"
+			],
+			[
+				"activ",
+				"activevideo"
+			],
+			[
+				"remove",
+				"removeClass  (function)"
+			],
+			[
+				"caro",
+				"carouselVideo"
+			],
+			[
+				"all",
+				"allowAuto"
+			],
+			[
+				"reset",
+				"resettimer"
+			],
+			[
+				"end",
+				"endAnimationPos"
+			],
+			[
+				"js-conv",
+				"js-conv-slide"
+			],
+			[
+				"current",
+				"currentSection"
+			],
+			[
+				"curr",
+				"currentSection"
+			],
+			[
+				"rese",
+				"resettimer"
+			],
+			[
+				"timer",
+				"timerpos"
+			],
+			[
+				"start",
+				"startAnimDone"
+			],
+			[
+				"slide",
+				"slide1timer"
+			],
+			[
+				"js-b",
+				"js-book-code"
+			],
+			[
+				"star",
+				"startAnimDone"
+			],
+			[
+				"tim",
+				"timerpos"
+			],
+			[
+				"conv",
+				"convCarousel"
+			],
+			[
+				"animate",
+				"animateSlide1"
+			],
+			[
+				"anim",
+				"animtime"
+			],
+			[
+				"remov",
+				"removeClass  (function)"
+			],
+			[
+				"has",
+				"hasClass  (function)"
+			],
+			[
+				"page",
+				"pageloadcallback"
+			],
+			[
+				"text-",
+				"text-transform:   (property)"
+			],
+			[
+				"text",
+				"text-transform:   (property)"
+			],
+			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"back",
+				"background:   (property)"
+			],
+			[
+				"ch",
+				"children  (function)"
+			],
+			[
+				"background",
+				"background-color:   (property)"
+			],
+			[
+				"font-s",
+				"font-style:   (property)"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"backgro",
+				"background-color:   (property)"
+			],
+			[
+				"font",
+				"font-style:   (property)"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"pro",
+				"productStory"
+			],
+			[
+				"pr",
+				"productStory"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 271.0,
+		"selected_items":
+		[
+			[
+				"xhtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"xht",
+				"Set Syntax: HTML"
+			],
+			[
+				"xhtm",
+				"Set Syntax: HTML"
+			],
+			[
+				"xhtrm",
+				"Set Syntax: HTML (Rails)"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"xjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"xh",
+				"Set Syntax: HTML"
+			],
+			[
+				"xjso",
+				"Set Syntax: JSON"
+			],
+			[
+				"sni",
+				"Snippet: ie8conditional"
+			],
+			[
+				"pacre",
+				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"set",
+				"Set Syntax: SCSS"
+			],
+			[
+				"Snippet: sn",
+				"Snippet: sn-gencarousel"
+			],
+			[
+				"pak in",
+				"Package Control: Install Package"
+			],
+			[
+				"pakage in",
+				"Package Control: Install Package"
+			],
+			[
+				"packeage ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 601.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Volumes/ContentImages/CDNRepository/JS/DP/Story/gold_bar/goldBarParent.js",
+		"/Users/us16777/Documents/projects/melaleuca_com/detail_pages/membership-kit-gulp/sass/_utility.scss",
+		"/Users/us16777/Documents/projects/melaleuca_com/detail_pages/membership-kit-gulp/sass/_sprites.scss",
+		"/Users/us16777/Documents/projects/melaleuca_com/detail_pages/membership-kit-gulp/sprite/sprites.scss",
+		"/Users/us16777/Documents/projects/melaleuca_com/detail_pages/membership-kit-gulp/sprite/image-sprites.scss",
+		"/Users/us16777/Documents/projects/melaleuca_com/detail_pages/membership-kit-gulp/package.json",
+		"/Users/us16777/Documents/projects/melaleuca_com/detail_pages/membership-kit-gulp/gulpfile.js",
+		"/Users/us16777/Documents/projects/melaleuca_com/product-store/impact/2014/08/impact_08_esUs.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/product-store/impact/2014/08/impact_08_enCa.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/product-store/impact/2014/08/impact_08_frCa.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/product-store/impact/2014/08/impact_08_enUs.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/convention/2014/gulpfile.js",
+		"/Users/us16777/Documents/projects/melaleuca_com/product-store/landing-pages/Extra-savings/back-to-school/2014/back-to-school-gulp/gulpfile.js",
+		"/Volumes/design group/500 Web Marketing/Design and Front-end/Melaleuca.com/business-center/Category Landing/News & Meetings/LCE Photo Gallery/2013/Front End/moveToCDN-2.py",
+		"/Users/us16777/Documents/projects/melaleuca_com/welcome-page/welcome-new-look-gulp/sass/_utility.scss",
+		"/Users/us16777/Documents/projects/melaleuca_com/welcome-page/welcome-new-look-gulp/package.json",
+		"/Volumes/ContentImages/CDNRepository/JS/promotions/promotions.js",
+		"/Users/us16777/Documents/projects/melaleuca_com/detail_pages/value-pack-modal-gulp/package.json",
+		"/Users/us16777/Documents/projects/melaleuca_com/detail_pages/value-pack-modal-gulp/js/value-pack-modal.js",
+		"/Users/us16777/Documents/projects/melaleuca_com/detail_pages/value-pack-modal-gulp/html/tooltips-examples-frCA.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/detail_pages/value-pack-modal-gulp/html/value-pack-modal_enUS.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/detail_pages/value-pack-modal-gulp/js/value-pack-modal-test.js",
+		"/Users/us16777/Documents/projects/melaleuca_com/detail_pages/value-pack-modal-gulp/sass/_toolTip.scss",
+		"/Users/us16777/Documents/projects/melaleuca_com/detail_pages/value-pack-modal-gulp/value-pack-modal.sublime-project",
+		"/Users/us16777/Documents/projects/melaleuca_com/detail_pages/value-pack-modal-gulp/html/value-pack-modal-test.html",
+		"/Volumes/ContentImages/CDNRepository/html/value-pack.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/detail_pages/value-pack-modal-gulp/html/value-pack-modal.html",
+		"/Users/us16777/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/us16777/Documents/projects/melaleuca_com/detail_pages/value-pack-modal-gulp/gulpfile.js",
+		"/Volumes/design group/500 Web Marketing/Design and Front-end/Melaleuca.com/_unsorted/_Front End/genTooltip/script.js",
+		"/Users/us16777/Documents/projects/melaleuca_com/special-offers/free-vitality-6-gulp/gulpfile.js",
+		"/Users/us16777/Documents/projects/melaleuca_com/special-offers/free-vitality-6-gulp/sass/_utility.scss",
+		"/Users/us16777/Documents/projects/melaleuca_com/special-offers/free-vitality-6-gulp/free-vitality-6.sublime-project",
+		"/Users/us16777/Documents/projects/melaleuca_com/special-offers/free-vitality-6-gulp/package.json",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/css/tile-quality.css",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/css/tile-finance.css",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/css/tile-environment.css",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/css/960_12_col.css",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/css/tile-health.css",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/css/tile-about.css",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/css/article.css",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/css/style.css",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/js/pillar-script.js",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/pillar_landing_about.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/index.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/js/homePage-index.js",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/css/index.css",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/pillar_landing_quality.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/pillar_landing_health.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/article_quality.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/article_change-the-world.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/article_350.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/article_health.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/pillar_landing_finances.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/pillar_landing_environment.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/article_finance.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/pillar_landing_our-company.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/pillar_landing.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/js/homePage-b.js",
+		"/Users/us16777/Documents/projects/melaleuca_com/homePage-6/homepage-b.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/mini_cart/cart.json",
+		"/Volumes/ContentImages/CDNRepository/JS/Adwords/adArray_minicart_enUs.js",
+		"/Users/us16777/Documents/projects/melaleuca_com/mini_cart/mini_cart_ads.html",
+		"/Users/us16777/Documents/projects/melacrawl-test/bogotest.py",
+		"/Users/us16777/Documents/projects/melacrawl-test/bogotet.py",
+		"/Users/us16777/Documents/projects/melacrawl/YoshiEditsPromoTestCA.py",
+		"/Users/us16777/Google Drive/bing_points/bing-points.py",
+		"/Users/us16777/Documents/projects/melacrawl/seibella_6-2014_test.py",
+		"/Users/us16777/Documents/projects/melacrawl/melacrawl.pyc",
+		"/Volumes/ContentImages/CDNRepository/JS/melaVideoPlayer/MelaVideoPlayer_noSkin.js",
+		"/Users/us16777/Documents/projects/melaleuca_com/business_center/landing_pages/frank-rowing-gulp/package.json",
+		"/Users/us16777/Documents/projects/melaleuca_com/business_center/landing_pages/frank-rowing-gulp/gulpfile.js",
+		"/Users/us16777/Documents/projects/melaleuca_com/business_center/landing_pages/frank-rowing-gulp/sass/frank-rowing.scss",
+		"/Users/us16777/Documents/projects/melaleuca_com/business_center/landing_pages/frank-rowing-gulp/sass/_utility.scss",
+		"/Users/us16777/Documents/projects/melaleuca_com/business_center/landing_pages/frank-rowing-gulp/frank-rowing.sublime-project",
+		"/Users/us16777/Documents/projects/melaleuca_com/business_center/landing_pages/frank-rowing-gulp/html/frank-rowing.html",
+		"/Volumes/ContentImages/CDNRepository/JS/franksChallenge/franksChallenge.js",
+		"/Users/us16777/Documents/projects/melacrawl/dailyplanner.py",
+		"/Users/us16777/Google Drive/bing_points/planner.js",
+		"/Users/us16777/Google Drive/bing_points/bing_points.js",
+		"/Users/us16777/Documents/projects/melacrawl/melacrawl.py",
+		"/Users/us16777/Desktop/business_center_video.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/convention/2014/html/convention_leadership_launch_postpurchase_enUs.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/convention/2014/html/convention_leadership_launch_postpurchase_2_enUs.html",
+		"/Volumes/design group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/html/overview/convention_overview_leadership_launch_esUs.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/convention/2014/html/convention_leadership_launch_postpurchase_esUs.html",
+		"/Volumes/ContentImages/CDNRepository/JS/Business_Center/Landing_Page/convention/convention_parent2.js",
+		"/Users/us16777/Documents/projects/melaleuca_com/convention/2014/sass/_parent.scss",
+		"/Users/us16777/Documents/projects/melaleuca_com/convention/2014/node_modules/gulp-jshint/node_modules/jshint/node_modules/.bin/strip-json-comments",
+		"/Users/us16777/Documents/projects/melaleuca_com/convention/2014/node_modules/gulp-imagemin/node_modules/image-min/node_modules/imagemin-svgo/node_modules/svgo/.svgo.yml",
+		"/Users/us16777/Documents/projects/melaleuca_com/convention/2014/node_modules/gulp-autoprefixer/.npmignore",
+		"/Users/us16777/Documents/projects/melaleuca_com/convention/2014/MelaVideoPlayer.js",
+		"/Users/us16777/Documents/projects/melaleuca_com/convention/2014/html/convention_leadership_launch_postpurchase_frCa.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/convention/2014/sass/leadership_launch.scss",
+		"/Users/us16777/Documents/projects/melaleuca_com/convention/2014/sass/_leadership_launch_materials.scss",
+		"/Users/us16777/Documents/projects/melaleuca_com/convention/2014/js/leadership_launch.js",
+		"/Users/us16777/Documents/projects/melaleuca_com/convention/2014/config.rb",
+		"/Volumes/Design Group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/html/overview/convention_overview_leadership_launch_post_date.html",
+		"/Volumes/Design Group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/html/overview/convention_overview_leadership_launch_pre_date_esUs.html",
+		"/Volumes/Design Group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/html/overview/convention_overview_leadership_launch_pre_date.html",
+		"/Volumes/Design Group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/html/overview/convention_overview_leadership_launch_post_date_esUs.html",
+		"/Volumes/Design Group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/html/parent/convention_parent_leadership-launch_pre_date_esus.html",
+		"/Volumes/Design Group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/html/parent/convention_parent_leadership-launch.html",
+		"/Volumes/Design Group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/html/parent/convention_parent_leadership-launch_pre_date.html",
+		"/Volumes/Design Group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/html/leadership_launch_prepurchase/convention_leadership_launch_prepurchase_enUs.html",
+		"/Volumes/design group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/html/leadership_launch_postpurchase/convention_leadership_launch_postpurchase_enUs.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/convention/2014/js/MelaVideoPlayer.js",
+		"/Volumes/design group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/convention_parent_ll.html",
+		"/Users/us16777/Documents/projects/melaleuca_com/convention/2014/node_modules/gulp-cache/.jshintrc",
+		"/Users/us16777/Documents/projects/melaleuca_com/convention/2014/node_modules/gulp-clean/node_modules/.bin/rimraf",
+		"/Users/us16777/Documents/projects/melaleuca_com/convention/2014/sass/_leadership_launch_materials_3.scss",
+		"/Users/us16777/Documents/projects/melaproject/package.json",
+		"/Users/us16777/Documents/projects/melaproject/node-webkit-v0.9.2-osx-ia32/package.json",
+		"/Volumes/design group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/sass/_parent.scss",
+		"/Volumes/ContentImages/CDNRepository/JS/Business_Center/Landing_Page/convention/MelaVideoPlayer.js",
+		"/Volumes/ContentImages/CDNRepository/JS/DP/Discover_More/discovermore2.js",
+		"/Volumes/design group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/sass/convention.scss",
+		"/Volumes/design group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/.sass-cache/f4f50816bde3dc10bd868722432f897fe674ac6c/_leadership_launch_materials.scssc",
+		"/Volumes/design group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/sass/_leadership_launch_materials.scss",
+		"/Volumes/design group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/html/leadership_launch_prepurchase/convention_leadership_launch_prepurchase_enUs.html",
+		"/Volumes/ContentImages/CDNRepository/JS/Business_Center/Landing_Page/convention/convention_parent.js",
+		"/Volumes/design group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/html/schedule/convention_schedule.html",
+		"/Volumes/design group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/html/leadership_launch_purchase/convention_leadership_launch_purchase_enUs.html",
+		"/Volumes/design group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/html/parent/convention_parent.html",
+		"/Volumes/ContentImages/CDNRepository/JS/Business_Center/Landing_Page/convention/convention.js",
+		"/Volumes/ContentImages/CDNRepository/JS/Business_Center/Landing_Page/convention/.smbdeleteAAAc0000000e3eb0",
+		"/Volumes/design group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/sass/convention.sublime-project",
+		"/Volumes/design group/500 Melaleuca.com/Business Center/News & Meetings/Convention/2014/Front End/sass/ie.scss"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 106.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"copygreen",
+			"add-1",
+			".h5",
+			"$bordergray",
+			"background-color",
+			"sprites-",
+			"active",
+			"enUs",
+			"div",
+			"welcomeNavBtns",
+			"div",
+			"span",
+			"welcomeLeftContent",
+			"2000905",
+			"i",
+			"h4",
+			"cf",
+			"triangle",
+			"\n<!--",
+			"allowadd",
+			"TM",
+			"Includes",
+			"cf",
+			"\"",
+			"font-weight",
+			"Gotham",
+			"img src=\"/ContentImages/CDNRepository/",
+			"img src='/ContentImages/CDNRepository/",
+			"addObj",
+			"2000887",
+			"prod",
+			"theData",
+			"playMiniMovie",
+			"jw",
+			"unlocked",
+			"70px",
+			"poster",
+			";\n",
+			"div",
+			".play",
+			"vp",
+			"contentWrapper",
+			"vidPosterIn",
+			"jw",
+			"playEnvironment",
+			"movieContainers",
+			"movie",
+			"home-play",
+			"footerBottom",
+			"booterBottom",
+			"removeDuplicateSkus",
+			"numMatch",
+			"preventseeking",
+			"poster",
+			"image",
+			"walker_documonial_v15a0_2_enUS/walker_documonial_v15a0_2_enUS",
+			"closling",
+			"clsing",
+			"product",
+			"closing",
+			"product",
+			"new",
+			"new product",
+			"new product announ",
+			"/ContentImages/CDNRepository",
+			"https://webcontentus.melaleuca.com",
+			"webcontent",
+			"/'LearnToEarn",
+			"/LearnToEarn",
+			"/ProductStore/Sales_Aids/",
+			"sloot",
+			"div",
+			"sloot",
+			"div",
+			"< img",
+			"img src=\"/ContentImages/CDNRepository",
+			"data-mediaitemname=\"marketing_executive_of_the_year\"",
+			"convCarousel",
+			"CreateSourcesForPlayer",
+			"CreatePlayer",
+			"HttpSource",
+			"cons",
+			"thePlayer",
+			"loadCarouselImages",
+			"section",
+			"section ",
+			"section =",
+			"var section",
+			"section=",
+			"section =",
+			"animateSlide1",
+			"getCurrentIndex",
+			"animateSlide1",
+			"conso",
+			"#259004",
+			"259004",
+			"'Gotham Narrow 2r', 'Gotham Narrow A', 'Gotham Narrow B'",
+			"console",
+			"section",
+			"convMenuID",
+			"sessionStorage",
+			"sectionGoTo",
+			"jwplayer",
+			"gotopurchasell",
+			"purchase",
+			"pagedata",
+			"pageloadcallback",
+			"toggleLoader",
+			"event-action",
+			"convention_",
+			"http",
+			"https",
+			"caldate",
+			"h3",
+			"booklink",
+			"js-eventlink",
+			"cons",
+			"menuID",
+			"setInterval",
+			"console.log",
+			"console",
+			"sectionGoTo",
+			"section",
+			"sessionStorage",
+			"menuID",
+			"menuid",
+			"sectionGoto",
+			"slidesobj"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"sprites.",
+			".active",
+			"frCa",
+			"enCa",
+			"esUs",
+			"w-triangle",
+			"'",
+			"img src=\"//cdnus.melaleuca.com/",
+			"img src='//cdnus.melaleuca.com/",
+			"frank_rowing_0_enUS/frank_rowing_0_enUS",
+			"//cdnus.melaleuca.com",
+			"",
+			"/BusinessCenter/News_and_Meetings/Convention/2014/Leadership_Launch/",
+			" img src=\"//cdnus.melaleuca.com",
+			" ",
+			"$green",
+			"$gotham",
+			"convMenuID"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "scripts.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"gulpfile.js"
+			],
+			[
+				"_",
+				"sass/_utility.scss"
+			],
+			[
+				".scs",
+				"sass/membership-kit.scss"
+			],
+			[
+				".js",
+				"js/membership-kit.js"
+			],
+			[
+				".htm",
+				"html/membership-kit.html"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				".sc",
+				"sass/_utility.scss"
+			],
+			[
+				".ht",
+				"html/welcome-new-look.html"
+			],
+			[
+				".html",
+				"html/tooltips-examples.html"
+			],
+			[
+				"js",
+				"js/value-pack-modal.js"
+			],
+			[
+				"ex",
+				"html/tooltips-examples.html"
+			],
+			[
+				"gu",
+				"gulpfile.js"
+			],
+			[
+				"gul",
+				"gulpfile.js"
+			],
+			[
+				"ut",
+				"sass/_utility.scss"
+			],
+			[
+				"uti",
+				"sass/_utility.scss"
+			],
+			[
+				".scss",
+				"sass/_parent.scss"
+			],
+			[
+				"mela",
+				"js/MelaVideoPlayer.js"
+			],
+			[
+				".rb",
+				"2014/config.rb"
+			],
+			[
+				".s",
+				"sass/_leadership_launch_materials.scss"
+			],
+			[
+				"leader",
+				"html/leadership_launch_purchase/convention_leadership_launch_purchase_enUs.html"
+			],
+			[
+				"launch",
+				"html/parent/convention_parent_leadership-launch.html"
+			],
+			[
+				"lead",
+				"html/parent/convention_parent_leadership-launch.html"
+			],
+			[
+				"ie",
+				"ie.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 213.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
