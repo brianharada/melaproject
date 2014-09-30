@@ -113,6 +113,21 @@ $('#js-createButton').on('click', function () {
       console.log('html created');
     }
   });
+  // copy jshint file from server to local directory
+  var jshintpath = pathobj.networkpath.split('500 Web Marketing')[0] + '500 Web Marketing/Design and Front-end/front-end/jshint/jshintrc.json';
+
+  if ( fs.existsSync(jshintpath) ){
+    var jshintfile = fs.readFileSync(jshintpath);
+    fs.writeFile(path.join(pathobj.homepath,'.jshintrc'),jshintfile,function (err) {
+      if(err) {
+        showError(err);
+      } else {
+        console.log('.jshintrc file created');
+      }
+    });
+  }
+
+
   // npminstall = childProcess.exec('ls -l',{cwd:pathobj.homepath,env:'npm'}, function(error, stdout, stderr){
   //   if(error){
   //     showError(error.stack);
