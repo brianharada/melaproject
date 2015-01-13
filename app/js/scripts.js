@@ -47,8 +47,7 @@ $('#js-createButton').on('click', function () {
 
   var gulpfile = createFile.createGulpFile(pathobj,optionsobj);
   var packagejson = createFile.createPackageJson(pathobj);
-  var mainsass = createFile.createMainSass();
-  var utilitysass = createFile.createUtilitySass(pathobj,optionsobj);
+  var mainsass = createFile.createMainSass(pathobj);
   var html = createFile.createHtml(pathobj,optionsobj);
   var sbproj = createFile.createSublimeProject();
   var js;

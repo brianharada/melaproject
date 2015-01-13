@@ -112,8 +112,8 @@ function createPackageJson(_pathobj){
   return code;
 }
 
-function createMainSass(){
-  var code = '@import \'utility\';\n\n';
+function createMainSass(_pathobj){
+  var code = '@import \''+ _pathobj.networkpath.split('500 Web Marketing')[0]+'500 Web Marketing/Design and Front-end/front-end/global-scss/utility\';\n\n';
   return code;
 }
 
