@@ -113,7 +113,12 @@ function createPackageJson(_pathobj){
 }
 
 function createMainSass(_pathobj){
-  var code = '@import \''+ _pathobj.networkpath.split('500 Web Marketing')[0]+'500 Web Marketing/Design and Front-end/front-end/global-scss/utility\';\n\n';
+  var imgpath = _pathobj.imageclean !== false ? _pathobj.imageclean : _pathobj.imagepath;  
+  var code = '// use this utility file for your font stack, buttons, and other miscelaneous things, look through the file to see wath is available\n// DO NOT EDIT THE UTILITY FILE\n' +
+  '@import \''+ _pathobj.networkpath.split('500 Web Marketing')[0]+'500 Web Marketing/Design and Front-end/front-end/global-scss/utility\';\n\n\n' +
+  '// this image-path variable is used in the bg-img mixin in the utility file\n' +
+  '$image-path: \'&/\';\n'.replace('&',imgpath);
+
   return code;
 }
 

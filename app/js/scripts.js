@@ -89,14 +89,6 @@ $('#js-createButton').on('click', function () {
     }
   });
 
-  fs.writeFile(path.join(pathobj.homepath, 'sass', '_utility.scss'), utilitysass, function (err) {
-    if (err) {
-      showError(err);
-    } else {
-      console.log('utility Sass created');
-    }
-  });
-
   fs.writeFile(path.join(pathobj.homepath, 'js', pathobj.projectname + '.js'), js, function (err) {
     if (err) {
       showError(err);
