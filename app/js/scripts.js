@@ -118,6 +118,19 @@ $('#js-createButton').on('click', function () {
     });
   }
 
+  // copy checklist.txt from server to local directory
+  var checklistpath = pathobj.networkpath.split('500 Web Marketing')[0] + '500 Web Marketing/Design and Front-end/front-end/global-scss/checklist.txt';
+
+  if ( fs.existsSync(checklistpath) ){
+    var checklistfile = fs.readFileSync(checklistpath);
+    fs.writeFile(path.join(pathobj.homepath,'checklist.txt'),checklistfile,function (err) {
+      if(err) {
+        showError(err);
+      } else {
+        console.log('checklist.txt file created');
+      }
+    });
+  }
 
   // npminstall = childProcess.exec('ls -l',{cwd:pathobj.homepath,env:'npm'}, function(error, stdout, stderr){
   //   if(error){
