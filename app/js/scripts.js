@@ -89,6 +89,10 @@ function populatePaths() {
     optionsobj.c_detail = $('#check-detail').prop('checked');
     optionsobj.c_compass = $('#check-compass').prop('checked');
 
+    pathobj.cssclean = pathobj.cssclean.replace('/Web/CDNRepository/','/ContentImages/CDNRepository/');
+    pathobj.jsclean = pathobj.cssclean.replace('/Web/CDNRepository/','/ContentImages/CDNRepository/');
+    pathobj.imageclean = pathobj.cssclean.replace('/Web/CDNRepository/','/ContentImages/CDNRepository/');
+    
     return true;
 }
 
