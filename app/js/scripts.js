@@ -76,23 +76,22 @@ function populatePaths() {
 
     if (pathobj.csspath.split('Volumes').length > 1) {
         pathobj.cssclean = pathobj.csspath.split('Volumes')[1];
+        pathobj.cssclean = pathobj.cssclean.replace('/Web/CDNRepository/', '/ContentImages/CDNRepository/');
     }
 
     if (pathobj.jspath.split('Volumes').length > 1) {
         pathobj.jsclean = pathobj.jspath.split('Volumes')[1];
+        pathobj.jsclean = pathobj.jsclean.replace('/Web/CDNRepository/', '/ContentImages/CDNRepository/');
     }
 
     if (pathobj.imagepath.split('Volumes').length > 1) {
         pathobj.imageclean = pathobj.imagepath.split('Volumes')[1];
+        pathobj.imageclean = pathobj.imageclean.replace('/Web/CDNRepository/', '/ContentImages/CDNRepository/');
     }
 
     optionsobj.c_detail = $('#check-detail').prop('checked');
     optionsobj.c_compass = $('#check-compass').prop('checked');
 
-    pathobj.cssclean = pathobj.cssclean.replace('/Web/CDNRepository/','/ContentImages/CDNRepository/');
-    pathobj.jsclean = pathobj.cssclean.replace('/Web/CDNRepository/','/ContentImages/CDNRepository/');
-    pathobj.imageclean = pathobj.cssclean.replace('/Web/CDNRepository/','/ContentImages/CDNRepository/');
-    
     return true;
 }
 
